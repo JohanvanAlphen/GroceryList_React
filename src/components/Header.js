@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function Header() {
+function Header() {
     return (
-        <h1>Boodschappenlijst</h1>
+        <h1 className="main-header">Boodschappenlijst</h1>
     )
 }
+
+export default Header

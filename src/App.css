@@ -1,38 +1,207 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: auto;
+  height: 1rem;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2rem;
+  padding: 0.3rem;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  border-radius: 0.3125rem;
+  text-transform: capitalize;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 1rem;
+}
+
+.main-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(63, 59, 59);
+  color: white;
+  width: 100%;
+  height: 7rem;
+  border-radius: 0.3125rem;
+  margin-bottom: 0.625rem;
+}
+
+.grocerylist {
+  width: 49%;
+  height: 500px;
+  background-color: lightgray;
+  border-radius: 0.3125rem;
+}
+
+.grocerylist__header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.grocerylist__listitem .hide{
+  visibility: hidden;
+  width: auto;
   text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  color: red;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: lowercase;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.grocerylist__listitem:hover .hide {
+  visibility: visible;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.grocerylist__input {
+display: flex;
+justify-content: center;
+}
+
+.grocerylist__inputfield {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 0.3rem;
+  width: 15.625rem;
+  padding: 0.3125rem;
+  border-radius: 0.3125rem;
+  border: none;
+}
+
+.grocerylist__button {
+  margin-bottom: 1rem;
+  padding: 0.3125rem;
+  background-color: rgb(250, 127, 127);
+  color: black;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+}
+
+.grocerylist__button:hover {
+background-color: red;
+color:yellow;
+}
+
+.grocerylist__listitem:nth-child(odd) {
+background-color: lightblue;
+cursor: pointer;
+}
+
+.grocerylist__listitem:nth-child(even) {
+  background-color: rgb(76, 191, 230);
+  cursor: pointer;
   }
+
+.shoppingbasket{
+  width: 49%;
+  height: 500px;
+  margin-right: 1rem;
+  background-color: lightsteelblue;
+  border-radius: 0.3125rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.shoppingbasket__header{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.shoppingbasket__button{
+  width: 10rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.3125rem;
+  background-color: aqua;
+  color: black;
+  border-radius: 0.3125rem;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.shoppingbasket__button:hover{
+  background-color: blue;
+  color:yellow;
+}
+
+.shoppingbasket__listitem:nth-child(odd) {
+  background-color: rgb(252, 210, 132);
+  padding: 0.3rem;
+  border-radius: 0.3125rem;
+}
+.shoppingbasket__listitem:nth-child(even) {
+  background-color: rgb(250, 127, 127);
+  padding: 0.3rem;
+  border-radius: 0.3125rem;
+}
+
+.shoppingbasket__total {
+  background-color: aqua;
+  color: black;
+  padding: 0.3rem;
+  margin: 0.3rem;
+  border-radius: 0.3125rem;
+  font-style: italic;
+}
+
+.dustbin{
+  display: flex;
+  flex-direction: row;
+}
+
+.dustbin-button {
+  cursor: pointer;
+}
+
+.refresh-button{
+  margin: 1rem;
+  padding: 0.3125rem;
+  border-radius: 0.3125rem;
+}
+
+.refresh-button:hover{
+  font-weight: 700;
+  transform: scale(1.1);
+}
+
+.increase-button {
+  width: 1rem;
+  height: auto;
+  cursor:pointer;
+  margin-right: 0.3125rem;
+}
+
+.increase-button:hover {
+  font-weight: 900;
+  transform: scale(1.2);
+}
+
+.decrease-button {
+  width: 1rem;
+  height: auto;
+  cursor:pointer;
+  margin-right: 0.3125rem;
+}
+
+.decrease-button:hover {
+  font-weight: 900;
+  transform: scale(1.2);
 }

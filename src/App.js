@@ -1,18 +1,15 @@
-import Header from "./components/Header"
-import GroceryList from "./components/GroceryList"
 import './App.css';
-import ShoppingCart from "./components/ShoppingCart";
 import Container from "./Container"
-import Test from "./components/Test";
+import Header from "./components/Header"
+import RefreshPage from "./components/RefreshPage"
+
 
 function App() {
   return (
     <div>
       <Header />
-      {/* <GroceryList />
-      <ShoppingCart /> */}
       <Container />
-      {/* <Test /> */}
+      <RefreshPage />
     </div>
   );
 }

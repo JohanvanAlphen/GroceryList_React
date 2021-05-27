@@ -16,9 +16,9 @@ function Counter() {
 
     return (
         <div>
-            {count} stuk(s)
-            <button onClick={addCountHandler}>+</button>
-            <button onClick={removeCountHandler}>-</button>
+            Hoeveelheid: {count}
+            <button onClick={addCountHandler} className="increase-button">+</button>
+            <button onClick={removeCountHandler} className="decrease-button">-</button>
         </div>
     )
 }
