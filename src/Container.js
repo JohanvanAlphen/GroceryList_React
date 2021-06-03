@@ -88,7 +88,7 @@ function Container() {
         }
 
         const handleDeleteItem = (item) => {
-            const newList = []
+            const newList = [...list].filter(x => x.id !== item.id)
             setList(newList);
         }
 
